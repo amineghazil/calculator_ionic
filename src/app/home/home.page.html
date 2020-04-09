@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      calculatrice
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+
+    <ion-item>
+      <ion-label position="stacked" >valueur1</ion-label>
+      <ion-input [(ngModel)]="numberA" type="number" id="v1"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">valueur2</ion-label>
+      <ion-input [(ngModel)]="numberB" type="number" id="v2"></ion-input>
+    </ion-item>
+     <ion-button expand="block" (click)="addBtn()">+</ion-button>
+     <ion-button expand="block" (click)="subBtn()">-</ion-button>
+ 
+     <!-- <ion-item>
+      <ion-label position="stacked" id="r">resultat</ion-label>
+      <ion-input></ion-input>
+    </ion-item> -->
+
+
+
+  </div>
+</ion-content>
